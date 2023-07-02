@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>{{name}} {{surename}}'s CV </title>
+</head>
+
+<body style=" background-color: rgb(70, 95, 73);
+                font-size: 15px;">
+    <div style="width: 1020px; 
+                height: 820px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #fff;
+                padding: 10px">
+        <div style="width: 290px; 
+                    height: 800px; 
+                    float: left;
+                    background-color: rgb(247, 251, 126);
+                    padding: 10px;">
+            <img
+                src="https://scontent.fevn7-1.fna.fbcdn.net/v/t1.6435-9/198254972_1657629064431155_2034128988298694889_n.jpg?_nc_cat=110&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zpaQYsl-TCoAX_eFcJX&_nc_ht=scontent.fevn7-1.fna&oh=00_AfDFzUZ5WXcuDF0TRZCQ_E-1IMTqho5XqJWKCKBFeQS7Ig&oe=64BBDBC6">
+            <h3 style="color:rgb(57, 74, 95)"><i>About me</i></h3>
+            <hr>
+            <p style="padding: 10px;">
+                {{aboutMe}} !!!
+            </p>
+            <h3 style="color:rgb(57,74,95)"><i>Contacts</i></h3>
+            <hr>
+            {% for k in contacts %}
+            <p>
+                <i><b> {{k}} </b></i>
+            </p>
+            {% endfor %}
+
+        </div>
+        <div style="width: 680px; 
+                    height: 800px; 
+                    overflow: hidden;
+                    float: right;
+                    background-color: #bee6b5;
+                    padding: 10px;">
+
+            <h1 style="color:rgb(68, 23, 53); font-size: 40px;"><i><b>Naira<br>Mangasaryan</b></i></h1>
+            <h3 style="color:rgb(57,74,95); margin-top: 50px;"><i>EDUCATION</i></h3>
+            <hr>
+            <p>
+                {% for i in education %}
+
+                {{i.university}}<br>
+                {{i.period}}<br>
+                {{i.degree}}<br>
+                <br>
+
+                {% endfor %}
+
+            </p>
+            <h3 style="color:rgb(57,74,95); margin-top: 50px;"><i>WORK EXPERIANCE</i></h3>
+            <hr>
+            <p>
+                {% for i in expariance %}
+
+                {{i.job_title}}<br>
+                {{i.company}}<br>
+                {{i.period}}<br>
+                <br>
+
+                {% endfor %}
+
+            </p>
+            <h3 style="color:rgb(57,74,95); margin-top:50px;"><i>LANGUAGES</i></h3>
+            <hr>
+            <ul>
+
+                {% for i in languages %}
+
+                <li>{{i}}<br></li>
+
+                {% endfor %}
+
+            </ul>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>

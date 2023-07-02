@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block bodycontent %}
+<div class="min-h-full">
+  <nav class="bg-gray-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <img class="h-14 w-10 rounded-md"
+              src="https://product-image.juniqe-production.juniqe.com/media/catalog/product/seo-cache/x800/794/272/794-272-101P/Do-What-You-Love-Graphite-Poster.jpg"
+              alt="">
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="http://127.0.0.1:8000/about/"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-bold text-lg">About
+                Me</a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-4 flex items-center md:ml-6">
+            <div class="relative ml-3">
+              <img class="h-14 w-14 rounded-full"
+                src="https://scontent.fevn7-1.fna.fbcdn.net/v/t39.30808-6/347561022_2215596185301104_8658890181716469777_n.jpg?_nc_cat=104&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=00w3tAPMXdsAX-aiHvb&_nc_ht=scontent.fevn7-1.fna&oh=00_AfAYFfkPXoZfmIQxLB_yi6wtYHiA8eMNGvywG79psmOw2A&oe=64A23B27 "
+                alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="bg-white shadow">
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <h1 class="text-3xl font-bold tracking-tight text-gray-900">My Portfolio</h1>
+      </div>
+    </header>
+    <main>
+      <div class="mx-auto max-w-7xl py-4 sm:px-4 lg:px-8 grid grid-cols-2 divide-x text-zinc-100 text-center text-xl">
+        <div class="underline"> <a href="mailto:nairamangasaryan@gmail.com">nairamangasaryan@gmail.com </a> </div>
+        <div> mob: <i><b>+374 93 49 55 44</b></i> </div>
+      </div>
+    </main>
+</div>
+<div class="flex flex-row flex-wrap shadow-2xl mx-auto max-w-7xl px-10 py-10 sm:px-6 lg:px-8">
+  <table
+    class="mx-auto max-w-7xl px-3 py-3 rounded bg-slate-400 border-separate border-spacing-2 border border-slate-400 ...">
+    <thead>
+      <tr>
+        <th class="px-3 py-3">Work Experience</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in expariance %}
+      <tr>
+        <td class="px-3 py-3 rounded bg-slate-200 border border-slate-300 ..."> {{i.period}} </td>
+        <td class="px-3 py-3 rounded bg-red-50 border border-slate-300 ..."> {{i.job_title}}<br>{{i.company}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <table
+    class="mx-auto max-w-7xl bg-slate-400 px-3 py-3 rounded border-separate border-spacing-2 border border-slate-400 ...">
+    <thead>
+      <tr>
+        <th class="px-3 py-3 ">Education</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in education %}
+      <tr>
+        <td class="px-3 py-3 rounded bg-slate-200 border border-slate-300...">{{i.period}}</td>
+        <td class="px-3 py-3 rounded bg-red-50 border border-slate-300 ...">{{i.university}}<br>{{i.degree}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div class=" rounded flex flex-row flex-wrap shadow-2xl mx-auto max-w-7xl px-10 py-10 sm:px-6 lg:px-8">
+  <table
+    class="mx-auto max-w-7xl bg-slate-400 px-3 py-3 rounded border-separate border-spacing-2 border border-slate-400 ...">
+    <thead>
+      <tr>
+        <th class="px-3 py-3 rounded bg-slate-200 border border-slate-300 ..."> Skills</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="px-3 py-3 rounded bg-red-50 border border-slate-300 ...">
+          {% for i in skills %}
+          <li>{{i}}<br></li>
+          {% endfor %}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table
+    class=" px-3 py-3 mx-auto max-w-7xl bg-slate-400 rounded border-separate border-spacing-2 border border-slate-400 ...">
+    <thead>
+      <tr>
+        <th class="px-3 py-3 rounded bg-slate-200 border border-slate-300 ..."> Languages</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=" px-3 py-3 rounded bg-red-50 border border-slate-300 ...">
+          {% for i in languages %}
+          <li>{{i}}<br></li>
+          {% endfor %}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

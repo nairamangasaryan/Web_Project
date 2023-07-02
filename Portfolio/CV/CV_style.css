@@ -1,0 +1,61 @@
+#main_div {
+
+    border: 2px solid #000;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-image: url("./images_My_CV/background.jpg");
+    size: 50%;
+
+
+}
+
+#table1 {
+    width: 80%;
+    height: 80%;
+}
+
+#image {
+    border-radius: 150px;
+    width: 400px;
+    width: fit-content;
+}
+
+#name {
+    font-size: 100px;
+    font-style: italic;
+    margin-right: 50px;
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.td1 {
+    padding: 10px;
+    width: 65%;
+    vertical-align: top;
+}
+
+.td2 {
+    padding: 10px;
+    width: 35%;
+    vertical-align: top;
+}
+
+.title {
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(57, 74, 95);
+}
+
+table {
+    width: 95%;
+    height: 95%;
+    padding: 10px;
+}
+
+p {
+
+    padding-left: 30px;
+}

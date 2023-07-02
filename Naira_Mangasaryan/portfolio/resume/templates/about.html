@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block bodycontent %}
+
+<div class="relative z-10" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+  <img
+    src="https://scontent.fevn7-1.fna.fbcdn.net/v/t39.30808-6/347561022_2215596185301104_8658890181716469777_n.jpg?_nc_cat=104&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=00w3tAPMXdsAX-aiHvb&_nc_ht=scontent.fevn7-1.fna&oh=00_AfAYFfkPXoZfmIQxLB_yi6wtYHiA8eMNGvywG79psmOw2A&oe=64A23B27 ">
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+  <div class="fixed inset-0 overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+        <div class="pointer-events-auto relative w-screen max-w-md">
+          <div class="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+            <div class="px-4 sm:px-6">
+              <div>
+                <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Naira Mangasaryan</h1>
+              </div>
+              <div class="px-4 sm:px-6">
+                <br>
+                <a href="http://127.0.0.1:8000/portfolio/" target="_blank" <h2
+                  class="text-base font-semibold leading-6 text-indigo-900" id="slide-over-title text-sm/[30px]"> My
+                  Portfolio </h2></a>
+              </div>
+
+              <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+                <div class="absolute inset-0 -z-10 overflow-hidden">
+                  <svg
+                    class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+                    aria-hidden="true">
+                    <defs>
+                      <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="400" height="200" x="100%" y="-1"
+                        patternUnits="userSpaceOnUse">
+                        <path d="M100 200V.5M.5 .5H200" fill="none" />
+                      </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" stroke-width="0"
+                      fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+                  </svg>
+                </div>
+
+                <div class="lg:max-w-lg">
+                  <p class="text-base font-semibold leading-7 text-indigo-400 px-4 italic">Do What You Love, and Love
+                    What You Do... </p>
+                  <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl px-6">About Me</h1>
+                  <p class="mt-6 text-xl leading-8 text-gray-700 px-6 italic">
+                    I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease.
+                    I believe that a person should work on developing their professional skills and learning new
+                    things all the time. <br>
+                    I am a beginner Python programmer. Now, I am participating in the "Python" course of the AGBU "Women Coders" 
+                    program, which started on 02.2023. I managed to study the core of Python, and now are investigating the Django 
+                    freamwork for backend development.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
